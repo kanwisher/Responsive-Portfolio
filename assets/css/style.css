@@ -1,0 +1,537 @@
+
+
+
+
+
+
+/****MAIN BODY****/
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+html, body {
+    background: url(../images/arches.png);
+    font-family: 'Arial', 'Helvetica neue', Helvetica, sans-serif;
+    height: 100%;
+    color: #777777;
+
+
+}
+
+#wrapper {
+    min-height: 100%;
+    margin: 0 auto -100px;
+    height: auto;
+    height: 100%;
+}
+
+h1,h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+
+a:visited {
+    color: #777;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+
+
+
+
+
+
+/****HEADER****/
+
+
+
+
+
+
+
+
+header {
+    background: #fff;
+    margin: 0 auto;
+    border-bottom: 2px solid #ccc;
+    height: 100px;
+    overflow: auto; /* prevents content from leaving header space */
+    width: 100%;
+
+}
+
+#heading {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    background: #4aaaa5;
+    float: left;
+    color: white;
+    padding: 33px;
+    margin: 0 30px 0 0;
+    white-space: nowrap; /*prevents mheading from stacking when page shrinks*/
+    }
+
+
+nav {
+    float: right;
+    padding-top: 40px;
+}
+
+
+nav a {
+    border-right: 1px solid #ccc; /* divider for nav elements */
+    padding: 20px;
+}
+
+nav a:last-child { /* Removes last link border*/
+    border: none;
+    padding-right: 0;
+}
+
+#active {
+    color: #4aaaa5;
+}
+
+
+
+
+
+
+
+/****MAIN CONTENT BOX (About and Connect combined)****/
+
+
+
+
+
+
+
+
+#content {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+
+
+
+/***ABOUT SECTION****/
+
+
+
+
+
+
+
+
+
+#about {
+    width: 650px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fff;
+    padding: 35px;
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #4aaaa5;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.2em;
+    margin-top: 15px;
+
+}
+
+
+#mypic {
+    margin: 10px 40px 10px 0;
+    box-shadow: 10px 10px 5px #888;
+    float: left;
+}
+
+.projectpic {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+
+.projectpic:hover {
+    opacity: .5;
+}
+
+#icons a:hover {
+    opacity: .5;
+}
+
+h3 {
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 15px;
+    background: #4aaaa5;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/****FORM STYLE*****/
+
+
+
+
+
+
+
+
+input {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-color: solid #ccc;
+
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 200px;
+    margin-top: 10px;
+
+}
+
+input[value]{
+    font-family:'Arial', 'Helvetica neue', Helvetica, sans-serif;
+    color: #ccc;
+    padding: 10px;
+}
+
+input[type=submit]{
+    width: 100px;
+    border: none;
+    color: white;
+    background: #4aaaa5;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+
+input[type=submit]:hover {
+    background: orange;
+}
+
+
+
+
+
+
+
+
+/*****CONNECT SECTION****/
+
+
+
+
+
+
+
+
+#connect {
+    float: right;
+    background: #fff;
+    padding: 10px;
+    width: 270px;
+    border: 1px solid #ccc;
+}
+
+
+#connect h2 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#icons {
+    padding: 15px 5px 5px 5px;
+
+}
+
+
+
+
+
+
+
+/*****FOOTER*****/
+
+
+
+
+
+
+
+
+#push {
+    height: 100px;
+    
+}
+
+footer {
+	background: #666;
+	text-align: center;
+	border-top: 6px solid #4aaaa5;
+	height: 100px;
+	color: #fff;
+	padding-top: 35px;
+    clear: both;
+    overflow: none;
+}
+
+
+
+
+
+/****MEDIA QUERY****/
+
+@media screen and (max-width: 980px){
+
+
+
+
+#heading {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#about {
+    width: 360px;
+
+}
+
+#content {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+#mypic {
+    float: none;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 768px){
+
+
+#heading {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    height: 80px;
+    overflow: none;
+}
+
+header h1 {
+    font-size: 1.65em;
+    padding: 26px;
+
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+
+
+#about {
+    width: 600px;
+
+}
+
+#content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+#mypic {
+    float: left;
+    margin: 0 35px 15px 0;
+}
+
+#connect {
+    float: left;
+    width: 600px;
+    padding: 35px;
+    margin-bottom: 35px;
+
+}
+
+#connect h2 {
+    text-align: left;
+    margin-top: 0px;
+}
+
+#icons {
+    margin-left: -15px;
+}
+
+
+
+nav {
+    float: right;
+    padding-top: 30px;
+    font-size: .9em;
+}
+
+
+nav a {
+    border-right: 1px solid #ccc; /* divider for nav elements */
+    padding: 10px;
+}
+
+nav a:last-child { 
+     border: none;
+    padding-right: 0;
+}
+
+
+
+.projectpic img {
+    width: 241px;
+
+}
+
+@media screen and (max-width: 640px){
+    
+   #heading {
+        max-width: 640px;
+   }
+
+    #content {
+        max-width: 515px;
+
+    }
+
+    #about {
+        max-width: 540px;
+        width: 530px;
+        margin: 0;
+    }
+
+    #connect {
+        max-width: 540px;
+        width: 530px;
+    }
+
+    header {
+        position: static;
+        background-color: #4aaaa5;
+        height: 140px;
+        overflow: hidden;
+     }
+
+    #heading h1 {
+        text-align: center;
+        padding: 20px;
+        float: none;
+        font-size: 2em;
+        margin-right: 0;
+
+     }
+
+
+    nav {
+        float: none;
+        text-align: center;
+        background-color: white;        
+        width: 100%;
+        padding: 25px 0px 25px 0px;
+        
+        
+    }
+
+    nav a {
+        padding: 10px 50px 10px 50px;
+        font-size: 1.3em;
+    }
+
+    nav a:last-child { /* Removes last link border*/
+    border: none;
+    padding-right: 50px
+}
+
+#mypic {
+    float: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.projectpic img {
+    width: 445px;
+    height: 350px;
+}
+
+h2 {
+    font-size: 1.6em;
+}
